@@ -10,4 +10,4 @@ class ContactFormView(FormView):
     success_url='/thanku/'
 
 class Thank(TemplateView):
-    template_name='app/thanku'
+    template_name='app/thanku.html'

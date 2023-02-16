@@ -9,8 +9,10 @@
 <body>
     <h1>here we are going to learn about the concept of the form view and this is very important features</h1>
     <form action="" method="post"novalidate>
+        {% csrf_token %}
         {{form.as_p}}
+        <button type="submit">submit</button>
     </form>
-    <button type="submit">submit</button>
+    {% comment %} <button type="submit">submit</button> {% endcomment %}
 </body>
 </html>
